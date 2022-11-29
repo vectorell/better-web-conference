@@ -1,0 +1,22 @@
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+p {
+    margin: 0.5em;
+}
+
+.contentcontainer {
+    background-image: url("/img/female-business-executive-giving-speech.jpg");
+    background-size: 100%;
+    background-position-y: -5em;
+    height: 70%;
+    width: 100%;
+    align-self: center;
+    margin-top: 3em;
+    border: 1px solid green;
+    overflow: hidden;
+}
