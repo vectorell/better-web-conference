@@ -1,3 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+* {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
 body {
+    background-color: #3A3845;
+    color: #ffffff;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+
+header {
+    border: 2px dotted green;
+    background-color: #F7CCAC;
+    color: #3A3845;
+    display: flex;
+    justify-content: center;
+}
+
+/* nav {
+    display: flex;
+} */
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: unset;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items > li {
+    flex-grow: 1;
+    /* border: 1px solid #3a384574; */
+    border-radius: 0.5em;
+    box-shadow: 0px 4px 6px #71797e7d;
+    width: 8em;
+    margin: 0em 1em;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+nav > ul > li > a:hover {
+    background-color: #3A3845;
+    color: #F7CCAC;
+    border-radius: 0.5em;
+    transition: 0.2s;
+}
+
+nav > ul > li > a:active {
     background-color: black;
+    color:white;
+}
+nav > ul > li > a:focus {
+    background-color: #3A3845;
+    color: #F7CCAC;
+    border-radius: 0.5em;
+    transition: 0.2s;
+}
+
+
+main {
+    border: 2px dotted red;
+}
+
+footer {
+    border: 2px dotted powderblue;
+    background-color: #C69B7B;
+    color: #3A3845;
 }
