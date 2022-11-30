@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #3A3845;
+    background-color: var(--colordarkgrey);
     color: #ffffff;
     height: 100vh;
     display: grid;
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #F7CCAC;
+    background-color: var(--colorlightbeige);
     color: #3A3845;
     display: flex;
     justify-content: center;
@@ -56,14 +56,14 @@ header {
 }
 
 .nav-link > a:hover {
-    background-color: #3A3845;
-    color: #F7CCAC;
+    background-color: var(--colordarkgrey);
+    color: var(--colorlightbeige);
     transition: 0.2s;
     border-radius: 0.5em;
 }
 
 .nav-link > a:focus {
-    background-color: #3A3845;
+    background-color: var(--colordarkgrey);
     color: #F7CCAC;
     transition: 0.2s;
 }
@@ -74,6 +74,12 @@ main {
 }
 
 footer {
-    background-color: #C69B7B;
+    background-color: var(--colordarkerbeige);
     color: #2a2932;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.3em;
+    font-weight: 600;
 }
