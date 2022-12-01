@@ -12,8 +12,8 @@ body {
     background-color: var(--colordarkgrey);
     color: #ffffff;
     height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 10fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -31,10 +31,6 @@ body {
     flex-grow: 1;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.header__nav__li {
-    box-shadow: 0px 1px 6px #71797e7d;
 }
 
 .header__nav__li > a {
@@ -59,7 +55,6 @@ body {
     background-color: var(--colordarkgrey);
     color: var(--colorlightbeige);
     transition: 0.2s;
-    border-radius: 0.5em;
 }
 
 .header__nav__li > a:focus {
