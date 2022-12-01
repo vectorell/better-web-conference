@@ -16,7 +16,7 @@ body {
     grid-template-rows: 1fr 10fr 1fr;
 }
 
-header {
+.header {
     background-color: var(--colorlightbeige);
     color: #3A3845;
     display: flex;
@@ -24,7 +24,7 @@ header {
     align-items: center;
 }
 
-.nav-items {
+.header__nav__items {
     list-style: none;
     display: flex;
     text-align: center;
@@ -33,11 +33,11 @@ header {
     align-items: center;
 }
 
-.nav-items > li {
+.header__nav__li {
     box-shadow: 0px 1px 6px #71797e7d;
 }
 
-.nav-link > a {
+.header__nav__li > a {
     text-decoration: none;
     color: unset;
     padding: 1em;
@@ -46,7 +46,7 @@ header {
     align-items: center;
 }
 
-.nav-link {
+.header__nav__li {
     width: 8em;
     border-radius: 0.5em;
     margin: 0em 1em;
@@ -55,14 +55,14 @@ header {
     height: 80%;
 }
 
-.nav-link > a:hover {
+.header__nav__li > a:hover {
     background-color: var(--colordarkgrey);
     color: var(--colorlightbeige);
     transition: 0.2s;
     border-radius: 0.5em;
 }
 
-.nav-link > a:focus {
+.header__nav__li > a:focus {
     background-color: var(--colordarkgrey);
     color: #F7CCAC;
     transition: 0.2s;
