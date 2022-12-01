@@ -14,6 +14,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .header {
@@ -83,4 +84,7 @@ footer {
     align-items:center;
     font-size: 1.3em;
     font-weight: 600;
+    position: fixed;
+    bottom: 0em;
+    width: 100%;
 }
