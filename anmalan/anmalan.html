@@ -27,16 +27,16 @@
         <section class="container">
             <form class="container__forms" action="#">
                 <label class="container__inputheader" for="firstname"> Förnamn </label>
-                <input class="container__input-text" type="text" id="firstname" name="firstname" placeholder="Förnamn" pattern="[A-Z a-z]+" required>
+                <input class="container__input-text" type="text" id="firstname" name="firstname" placeholder="Förnamn" pattern="[A-Z a-z]+" maxlength="35" required>
                 <br/>
                 <label class="container__inputheader" for="lastname"> Efternamn </label>
-                <input class="container__input-text" type="text" id="lastname" name="lastname" placeholder="Efternamn" pattern="[A-Z a-z]+" required>
+                <input class="container__input-text" type="text" id="lastname" name="lastname" placeholder="Efternamn" pattern="[A-Z a-z]+" maxlength="35" required>
                 <br/>
                 <label class="container__inputheader" for="adress"> Adress </label>
-                <input class="container__input-text" type="text" id="adress" name="adress" placeholder="Adress" pattern="[A-Ö a-ö]+[0-9]" required>
+                <input class="container__input-text" type="text" id="adress" name="adress" placeholder="Adress" pattern="[A-Ö a-ö]+[0-9]" maxlength="35" required>
                 <br/>
                 <label class="container__inputheader" for="email"> E-post </label>
-                <input class="container__input-text" type="email" id="email" name="mail" placeholder="E-post"  required>
+                <input class="container__input-text" type="email" id="email" name="mail" placeholder="E-post" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="50" required>
                 <br/>
 
                 <h2> Välj din biljett </h2>    
@@ -83,7 +83,7 @@
                     <textarea name="allergies" id="allergies" cols="" rows="4"></textarea>
                 
                 </div>    
-                <button>Skicka</button>
+                <button class="container__button">Skicka anmälan</button>
             </form>
         </section>
 

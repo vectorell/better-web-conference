@@ -2,7 +2,8 @@
 	--colordarkgrey: #3A3845;
 	--colorlightbeige: #F7CCAC;
 	--colordarkerbeige: #C69B7B;
-	--color: ;
+
+		  /* ________ skugga mot "--colordarkgrey" bakgrund ___________ */
 	--shadow-color: 250deg 15% 12%;
 	--shadow-elevation-low:
 	  0.3px 0.3px 0.5px hsl(var(--shadow-color) / 0.34),
@@ -22,4 +23,27 @@
 	  14.2px 14.8px 23.1px -1.8px hsl(var(--shadow-color) / 0.34),
 	  21.5px 22.5px 35px -2.1px hsl(var(--shadow-color) / 0.34),
 	  31.7px 33.2px 51.6px -2.5px hsl(var(--shadow-color) / 0.34);
+
+
+	  /* ________ skugga mot ljusbrun bakgrund ___________ */
+	  --shadow-color2: 33deg 19% 51%;
+	  --shadow-elevation-low2:
+		0.3px 0.3px 0.5px hsl(var(--shadow-color2) / 0.34),
+		0.5px 0.6px 0.9px -1.2px hsl(var(--shadow-color2) / 0.34),
+		1.3px 1.3px 2.1px -2.5px hsl(var(--shadow-color2) / 0.34);
+	  --shadow-elevation-medium2:
+		0.3px 0.3px 0.5px hsl(var(--shadow-color2) / 0.36),
+		1.1px 1.1px 1.8px -0.8px hsl(var(--shadow-color2) / 0.36),
+		2.7px 2.7px 4.3px -1.7px hsl(var(--shadow-color2) / 0.36),
+		6.6px 6.7px 10.6px -2.5px hsl(var(--shadow-color2) / 0.36);
+	  --shadow-elevation-high2:
+		0.3px 0.3px 0.5px hsl(var(--shadow-color2) / 0.34),
+		1.9px 1.9px 3px -0.4px hsl(var(--shadow-color2) / 0.34),
+		3.6px 3.6px 5.7px -0.7px hsl(var(--shadow-color2) / 0.34),
+		5.9px 6px 9.5px -1.1px hsl(var(--shadow-color2) / 0.34),
+		9.5px 9.5px 15.1px -1.4px hsl(var(--shadow-color2) / 0.34),
+		14.8px 14.9px 23.6px -1.8px hsl(var(--shadow-color2) / 0.34),
+		22.5px 22.6px 35.9px -2.1px hsl(var(--shadow-color2) / 0.34),
+		33.1px 33.3px 52.8px -2.5px hsl(var(--shadow-color2) / 0.34);
+	  
 }
