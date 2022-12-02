@@ -20,11 +20,22 @@
     background-size: 100%;
     background-attachment: fixed;
     margin-top: 3em;
-    color:black;
-    box-shadow: var(--shadow-elevation-high);
+    box-shadow: var(--shadow-elevation-medium);
     border-radius: 1em 0em 1em;
     text-align: center;
+    transition: ease 0.15s;
 }
+
+.container__section:hover {
+    box-shadow: var(--shadow-elevation-high);
+    /* background: url("/img/white-parchment-paper.jpg");    */
+    background-color: var(--colorlightbeige);
+    transform: scale(101%);
+    background-size: 100%;
+    transition: ease 0.15s;
+    
+}
+
 
 
 .container__section__image > img {
@@ -47,6 +58,7 @@
 .container__section__text {
     width: 50%;
     align-self: center;
+    color:black;
 }
 
 .container__section__h2 {
@@ -57,14 +69,14 @@
     text-align: center;
 }
 
-
-
 .container__section__paragraph {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     margin-left: 3em;
     margin-right: 3em;
 }
+
+
 
 @media (max-width: 1170px) {
     .container {
