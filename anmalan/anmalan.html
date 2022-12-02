@@ -36,7 +36,7 @@
                 <input class="container__input-text" type="text" id="adress" name="adress" placeholder="Adress" pattern="[A-Ö a-ö]+[0-9]" maxlength="35" required>
                 <br/>
                 <label class="container__inputheader" for="email"> E-post </label>
-                <input class="container__input-text" type="email" id="email" name="mail" placeholder="E-post" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="50" required>
+                <input class="container__input-text" type="email" id="email" name="mail" placeholder="E-post" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="80" required>
                 <br/>
 
                 <h2> Välj din biljett </h2>    
@@ -54,8 +54,6 @@
                             <input class="container__input-text" type="date" name="ticket" id="singleday" required min="2022-12-09" max="2022-12-11">
                         </div>
                     </div>
-    
-                    
                 </div>
 
                 
@@ -63,26 +61,25 @@
                 <h2> Välj din mat </h2> 
                 <div class="container__food">
                     
-                    <div class="container__ticket__meat">
-                        <input type="radio" name="food" id="meat" required>
-                        <label for="meat"> Grillat </label>
+                    <div class="container__food__item container__food__meat" >
+                        <input type="radio" name="food" id="meat" tabindex="0" required  >
+                        <label  for="meat" > Grillat </label>
                     </div>
     
-                    <div class="container__ticket__fish">
+                    <div class="container__food__item container__food__fish" >
                         <input type="radio" name="food" id="fish">
                         <label for="fish"> Fisk </label>
                     </div>
 
-                    <div class="container__ticket__vegetarian">
+                    <div class="container__food__item container__food__vegetarian" >
                         <input type="radio" name="food" id="vegetarian">
-                        <label for="vegetarian"> Vegetariskt </label>
+                        <label for="vegetarian" > Vegetariskt </label>
                     </div>
-                    
-                    <h2>Vänligen fyll i eventuella allergier</h2>
-                    <label for="allergies"></label>
-                    <textarea name="allergies" id="allergies" cols="" rows="4"></textarea>
-                
+
                 </div>    
+                <h2>Vänligen fyll i eventuella allergier</h2>
+                <label for="allergies"></label>
+                <textarea name="allergies" id="allergies" cols="" rows="4" placeholder="Fyll i dina allergier här" ></textarea>
                 <button class="container__button">Skicka anmälan</button>
             </form>
         </section>
