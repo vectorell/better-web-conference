@@ -23,7 +23,71 @@
 
     <main>
         <h1> Anmälan </h1>
-        <input type="text">
+
+        <section class="container">
+            <form class="container__forms" action="#">
+                <label class="container__inputheader" for="firstname"> Förnamn </label>
+                <input class="container__input-text" type="text" id="firstname" name="firstname" placeholder="Förnamn" pattern="[A-Z a-z]+" required>
+                <br/>
+                <label class="container__inputheader" for="lastname"> Efternamn </label>
+                <input class="container__input-text" type="text" id="lastname" name="lastname" placeholder="Efternamn" pattern="[A-Z a-z]+" required>
+                <br/>
+                <label class="container__inputheader" for="adress"> Adress </label>
+                <input class="container__input-text" type="text" id="adress" name="adress" placeholder="Adress" pattern="[A-Ö a-ö]+[0-9]" required>
+                <br/>
+                <label class="container__inputheader" for="email"> E-post </label>
+                <input class="container__input-text" type="email" id="email" name="mail" placeholder="E-post"  required>
+                <br/>
+
+                <h2> Välj din biljett </h2>    
+                
+                <div class="container__date">
+                    <div class="container__ticket">
+                        <div class="container__ticket__all">
+                            <label for="alldays"> Från och med </label>
+                            <br/>
+                            <input class="container__input-text" type="date"  name="ticket" id="alldays" required min="2022-12-09" max="2022-12-11">
+                        </div>
+                        <div class="container__ticket__singleday">
+                            <label for="singleday"> Till och med </label>
+                            <br/>
+                            <input class="container__input-text" type="date" name="ticket" id="singleday" required min="2022-12-09" max="2022-12-11">
+                        </div>
+                    </div>
+    
+                    
+                </div>
+
+                
+
+                <h2> Välj din mat </h2> 
+                <div class="container__food">
+                    
+                    <div class="container__ticket__meat">
+                        <input type="radio" name="food" id="meat" required>
+                        <label for="meat"> Grillat </label>
+                    </div>
+    
+                    <div class="container__ticket__fish">
+                        <input type="radio" name="food" id="fish">
+                        <label for="fish"> Fisk </label>
+                    </div>
+
+                    <div class="container__ticket__vegetarian">
+                        <input type="radio" name="food" id="vegetarian">
+                        <label for="vegetarian"> Vegetariskt </label>
+                    </div>
+                    
+                    <h2>Vänligen fyll i eventuella allergier</h2>
+                    <label for="allergies"></label>
+                    <textarea name="allergies" id="allergies" cols="" rows="4"></textarea>
+                
+                </div>    
+                <button>Skicka</button>
+            </form>
+        </section>
+
+
     </main>
 
     <footer>
