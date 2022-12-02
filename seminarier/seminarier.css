@@ -16,27 +16,21 @@
     max-height: 20em;
     overflow: hidden;
     background-color: var(--colorlightbeige);
-    background-image: url("/img/beige-aged-background_53876-88685.webp");
+    background: url("/img/beige-aged-background_53876-88685.webp");   
     background-size: 100%;
     background-attachment: fixed;
     margin-top: 3em;
     box-shadow: var(--shadow-elevation-medium);
-    border-radius: 1em 0em 1em;
+    border-radius: 1em 0em 0em 1em;
     text-align: center;
-    transition: ease 0.15s;
+    transition: ease 0.05s;
 }
 
 .container__section:hover {
     box-shadow: var(--shadow-elevation-high);
-    /* background: url("/img/white-parchment-paper.jpg");    */
-    background-color: var(--colorlightbeige);
     transform: scale(101%);
-    background-size: 100%;
     transition: ease 0.15s;
-    
 }
-
-
 
 .container__section__image > img {
     max-width: 100%;
@@ -51,8 +45,7 @@
 
 .container__section:nth-child(even) {
     flex-direction: row-reverse;
-    /* background-color: var(--colordarkerbeige); */
-    border-radius: 0em 1em 0em;
+    border-radius: 0em 1em 1em 0em;
 }
 
 .container__section__text {
@@ -88,16 +81,16 @@
     .container__section {
         flex-direction: column;
         padding-left: 0em;
-        /* padding-bottom: 1em;; */
-        /* border: 2px solid black; */
         max-height: unset;
         align-items: center;
         margin-bottom: 1em;
         background-color: var(--colorlightbeige);
         margin-top: 2em;
-        border-radius: 0em 1em 0em;
-        box-shadow: var(--shadow-elevation-high);
-
+        border-radius: 0.5em;
+        box-shadow: var(--shadow-elevation-medium);
+    }
+    .container__section:hover {
+        background-size: 100%;
     }
     .container__section__text {
         min-width: 100%;
@@ -113,8 +106,7 @@
     }
     .container__section:nth-child(even) {
         flex-direction: column;
-        /* background-color: var(--colordarkerbeige); */
-        border-radius: 1em 0em 1em;
+        border-radius: 0.5em;
     }
     .container__section__h2 {
         margin-top: 0.5em;
