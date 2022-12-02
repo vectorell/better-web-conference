@@ -6,6 +6,7 @@
     width: 70vw;
     color: #000000;
     border-radius: 7em 0em 7em 0em;
+    max-width: 80em;
 }
 
 .container__section {
@@ -15,9 +16,14 @@
     max-height: 20em;
     overflow: hidden;
     background-color: var(--colorlightbeige);
-    margin-top: 1.5em;
+    background-image: url("/img/beige-aged-background_53876-88685.webp");
+    background-size: 100%;
+    background-attachment: fixed;
+    margin-top: 3em;
+    color:black;
     box-shadow: var(--shadow-elevation-high);
     border-radius: 1em 0em 1em;
+    text-align: center;
 }
 
 
@@ -34,7 +40,7 @@
 
 .container__section:nth-child(even) {
     flex-direction: row-reverse;
-    background-color: var(--colordarkerbeige);
+    /* background-color: var(--colordarkerbeige); */
     border-radius: 0em 1em 0em;
 }
 
@@ -95,7 +101,7 @@
     }
     .container__section:nth-child(even) {
         flex-direction: column;
-        background-color: var(--colordarkerbeige);
+        /* background-color: var(--colordarkerbeige); */
         border-radius: 1em 0em 1em;
     }
     .container__section__h2 {

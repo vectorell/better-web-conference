@@ -18,9 +18,12 @@ body {
 }
 
 .header {
-    background-color: var(--colorlightbeige);
-    color: #3A3845;
+    background-image: url("https://img.freepik.com/free-photo/abstract-red-background-christmas-valentines-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color_1258-53521.jpg?w=1060&t=st=1669908936~exp=1669909536~hmac=e7be49b99aee27cd059d61719b9ba34ad830f50ab9f6a4acd62bfd565a0b1668");
+    background-size: 100%;
+    filter: hue-rotate(32deg);
+    color: var(--colorlightbeige);
     display: flex;
+    color:white;
     justify-content: center;
     align-items: center;
     box-shadow: var(--shadow-elevation-medium);
