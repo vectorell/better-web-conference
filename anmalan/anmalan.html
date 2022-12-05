@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/variabler.css">
 </head>
 <body>
+
+<!-- HEADER_______________HEADER_______________HEADER -->
     <header class="header">
         <nav class="header__nav">
             <ul class="header__nav__items">
@@ -21,24 +23,66 @@
         </nav>
     </header>
 
+<!-- MAIN_______________MAIN_______________MAIN -->
     <main>
         <h1> Anmälan </h1>
 
+    <!--________NAMNGRUPP_________________________________________________________________-->
         <section class="container">
             <form class="container__forms" action="#">
+
+                <!-- FÖRNAMN -->
                 <label class="container__inputheader" for="firstname"> Förnamn </label>
                 <input class="container__input-text" type="text" id="firstname" name="firstname" placeholder="Förnamn" pattern="[A-Z a-z]+" maxlength="35" required>
-                <br/>
-                <label class="container__inputheader" for="lastname"> Efternamn </label>
-                <input class="container__input-text" type="text" id="lastname" name="lastname" placeholder="Efternamn" pattern="[A-Z a-z]+" maxlength="35" required>
-                <br/>
-                <label class="container__inputheader" for="adress"> Adress </label>
-                <input class="container__input-text" type="text" id="adress" name="adress" placeholder="Adress" pattern="[A-Ö a-ö]+[0-9]" maxlength="35" required>
-                <br/>
-                <label class="container__inputheader" for="email"> E-post </label>
-                <input class="container__input-text" type="email" id="email" name="mail" placeholder="E-post" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="80" required>
+                <p class="error-message">Skriv in ditt <strong>förnamn</strong> (max 35 bokstäver)</p>
                 <br/>
 
+                <!-- EFTERNAMN -->
+                <label class="container__inputheader" for="lastname"> Efternamn </label>
+                <input class="container__input-text" type="text" id="lastname" name="lastname" placeholder="Efternamn" pattern="[A-Z a-z]+" maxlength="35" required>
+                <p class="error-message">Skriv in ditt <strong>efternamn</strong> (max 35 bokstäver)</p>
+                <br/>
+
+                <!-- E-POST -->
+                <label class="container__inputheader" for="email"> E-post </label>
+                <input class="container__input-text" type="email" id="email" name="mail" placeholder="E-post" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="80" required>
+                <p class="error-message">Skriv in din <strong>e-post</strong>.</p>
+                <br/>
+            
+
+                <!--________ADRESSGRUPP_________________________________________________________________-->
+                <section class="container__adressgroup">
+                    <h2> Dina adressuppgifter </h2>
+
+                    <!-- STAD -->
+                    <label class="container__inputheader" for="stad"> Stad </label>
+                    <input class="container__input-text" type="text" id="stad" name="stad" placeholder="Stad" pattern="^[A-Ö a-ö]{1,}$" maxlength="35" required>
+                    <p class="error-message">Skriv in din <strong>stad</strong>  (max 35 bokstäver) </p>
+                    <br/>
+
+                    <!-- POSTNUMMER -->
+                    <label class="container__inputheader" for="postnummer"> Postnummer </label>
+                    <input class="container__input-text" type="text" id="postnummer" name="postnummer" placeholder="12345" pattern="[0-9]{5}$" maxlength="5" required>
+                    <p class="error-message">Skriv in ditt <strong>postnummer utan mellanslag</strong> </p>
+                    
+                    <br/>
+
+                    <!-- GATA -->
+                    <label class="container__inputheader" for="gata"> Adress </label>
+                    <input class="container__input-text" type="text" id="gata" name="gata" placeholder="Gata" pattern="[A-Ö a-ö]+[0-9]{1,}$" maxlength="35" required>
+                    <p class="error-message">Skriv in din <strong>gata</strong> (exempelvis Östra torggatan 9)</p>
+                    <br/>
+
+                    <!-- HUSNUMMER -->
+                    <!-- <label class="container__inputheader" for="husnr"> Husbokstav </label>
+                    <input class="container__input-text" type="text" id="husnr" name="husnr" placeholder="1A..." pattern="[A-Ö a-ö]+[0-9]{1,}$[Aa-Öö]" maxlength="35">
+                    <p class="error-message">Skriv in din <strong>adress</strong></p>
+                    <br/> -->
+                </section>
+
+
+
+                <!--________DATUMGRUPP_________________________________________________________________-->
                 <h2> Välj din biljett </h2>    
                 
                 <div class="container__date">
@@ -57,30 +101,39 @@
                 </div>
 
                 
-
-                <h2> Välj din mat </h2> 
+                <!--________MATGRUPP_________________________________________________________________-->
                 <div class="container__food">
-                    
+                    <h2> Välj din mat </h2> 
+                    <p class="focus-message" tabindex="0"> Vid <strong>nästa markering</strong>, använd piltangenterna för att välja maträtt. </p>
+
+                <!-- ALT.1 - GRILLAT -->
                     <div class="container__food__item container__food__meat" >
-                        <input type="radio" name="food" id="meat" tabindex="0" required  >
+                        <input type="radio" name="food" id="meat"  required  >
                         <label  for="meat" > Grillat </label>
                     </div>
     
+                <!-- ALT.2 - FISK -->
                     <div class="container__food__item container__food__fish" >
                         <input type="radio" name="food" id="fish">
                         <label for="fish"> Fisk </label>
                     </div>
 
+                <!-- ALT.3 - VEGETARISKT -->
                     <div class="container__food__item container__food__vegetarian" >
                         <input type="radio" name="food" id="vegetarian">
                         <label for="vegetarian" > Vegetariskt </label>
                     </div>
 
-                </div>    
-                <h2>Vänligen fyll i eventuella allergier</h2>
-                <label for="allergies"></label>
-                <textarea name="allergies" id="allergies" cols="" rows="4" placeholder="Fyll i dina allergier här" ></textarea>
+                    <!-- ALLERGIER -->
+                        <div class="container__allergies">
+                            <label for="allergies"><h3> Vänligen fyll i eventuella allergier </h3></label>
+                            <textarea name="allergies" id="allergies" cols="" rows="4" placeholder="Fyll i dina allergier här" maxlength="100" pattern="[A-Ö a-ö]"></textarea>
+                        </div>
+                
+                </div>
+
                 <button class="container__button">Skicka anmälan</button>
+
             </form>
         </section>
 

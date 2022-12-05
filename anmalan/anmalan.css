@@ -1,7 +1,7 @@
 .container {
     background-image: url("/img/beige-aged-background_53876-88685.webp");
     max-width: 50em;
-    min-width: 30em;
+    min-width: 20em;
     padding: 3em;
     color:var(--colordarkgrey);
     border-radius: 0.5em;
@@ -16,6 +16,40 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
+}
+
+/* RUBRIKERNA OVANFÖR INPUT-FÄLTEN */
+.container__inputheader {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+}
+
+/* TEXTEN INUTI INPUT-FÄLTEN */
+.container__input-text {
+    font-size: 1.05em;
+    height:2em;
+    padding-left: 0.5em;
+}
+
+
+.container__input-text-small {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.5em;
+    
+}
+.container__input-text-small > label {
+    width: 100%;;
+    text-align: left;
+}
+
+/* CONTAINER FÖR ADRESSGRUPPEN */
+.container__adressgroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .container__date {
@@ -61,6 +95,8 @@
     transition: 0.2s;
     background-color: rgb(87, 255, 199);
     box-shadow: var(--shadow-elevation-high2);
+    transform: scale(102%);
+    cursor: pointer;
 }
 
 .container__food__item > input {
@@ -82,18 +118,6 @@
     box-shadow: var(--shadow-elevation-medium2);
 }
 
-.container__inputheader {
-    font-size: 1.3em;
-    font-weight: 600;
-    padding-bottom: 0.2em;
-}
-
-.container__input-text {
-    font-size: 1.05em;
-    height:2em;
-    padding-left: 0.5em;
-}
-
 .container__button {
     box-shadow: var(--shadow-elevation-medium2);
     border: none;
@@ -103,6 +127,14 @@
     font-size: 1.3em;
     font-weight: 600;
     background-color: #58d26a;
+    transition: 0.2s;
+}
+
+.container__button:hover {
+    cursor: pointer;
+    transform: scale(101%);
+    transition: 0.2s;
+    box-shadow: var(--shadow-elevation-high2);
 }
 
 textarea {
@@ -118,11 +150,22 @@ input:invalid {
     border-radius: 0.5em;
     font-weight: 700;
 }
-
-input:focus {
-    border-right: 2em solid white;
-    border-left: 6em solid white ;
+input:invalid + .error-message {
+    transition: 0.2s;
+    visibility: visible;
 }
+
+.container__input-text:focus {
+    border-right: 2em solid white;
+    border: 5px solid #570e00; 
+    box-shadow: var(--shadow-elevation-high2);
+}
+.container__input-text-small:focus {
+    border-right: 2em solid white;
+    border: 5px solid #570e00; 
+    box-shadow: var(--shadow-elevation-high2);
+}
+
 
 input:valid {
     border-right: 2em solid green;
@@ -139,9 +182,15 @@ h2 {
     opacity:0;
     padding: 0.5em;
     transition:9999999s;
+    color: black;
 }
 
 .focus-message:focus {
     opacity: 1;
     transition:1s;
+}
+
+.error-message {
+    visibility: hidden;
+    font-size: 1.15em;
 }
