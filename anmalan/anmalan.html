@@ -55,9 +55,9 @@
                     <h2> Dina adressuppgifter </h2>
 
                     <!-- STAD -->
-                    <label class="container__inputheader" for="stad"> Stad </label>
-                    <input class="container__input-text" type="text" id="stad" name="stad" placeholder="Stad" pattern="^[A-Ö a-ö]{1,}$" maxlength="35" required>
-                    <p class="error-message">Skriv in din <strong>stad</strong>  (max 35 bokstäver) </p>
+                    <label class="container__inputheader" for="stad"> Postort </label>
+                    <input class="container__input-text" type="text" id="stad" name="stad" placeholder="Stad" pattern="^[A-Ö a-ö]{2,}$" maxlength="35" required>
+                    <p class="error-message">Skriv in din <strong>postort</strong>  (max 35 bokstäver) </p>
                     <br/>
 
                     <!-- POSTNUMMER -->
@@ -104,6 +104,8 @@
                 <!--________MATGRUPP_________________________________________________________________-->
                 <div class="container__food">
                     <h2> Välj din mat </h2> 
+                    
+                    <!-- DOLT MEDDELANDE SOM DYKER UPP VID TANGENTBORDSANVÄNDNING -->
                     <p class="focus-message" tabindex="0"> Vid <strong>nästa markering</strong>, använd piltangenterna för att välja maträtt. </p>
 
                 <!-- ALT.1 - GRILLAT -->
@@ -126,8 +128,8 @@
 
                     <!-- ALLERGIER -->
                         <div class="container__allergies">
-                            <label for="allergies"><h3> Vänligen fyll i eventuella allergier </h3></label>
-                            <textarea name="allergies" id="allergies" cols="" rows="4" placeholder="Fyll i dina allergier här" maxlength="100" pattern="[A-Ö a-ö]"></textarea>
+                            <label for="allergies"><h3> Vänligen fyll i eventuella allergier (max 100 tecken)</h3></label>
+                            <input class="container__input-text" type="text" name="allergies" id="allergies" placeholder="Fyll i dina allergier här" maxlength="100"></input>
                         </div>
                 
                 </div>

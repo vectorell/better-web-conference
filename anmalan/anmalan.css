@@ -219,12 +219,13 @@ input:valid {
         padding: 1em;
         color:var(--colordarkgrey);
         border-radius: 0.5em;
+        text-align: center;
     }
     .container__input-text {
         font-size: 0.85em;
         height:3em;
         padding-left: 0.2em;
-        width: fit-content;
+        width: 100%;
     }
 
     .container__food {
