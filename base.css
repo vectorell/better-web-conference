@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-    background-image: url("https://img.freepik.com/free-photo/abstract-red-background-christmas-valentines-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color_1258-53521.jpg?w=1060&t=st=1669908936~exp=1669909536~hmac=e7be49b99aee27cd059d61719b9ba34ad830f50ab9f6a4acd62bfd565a0b1668");
+    background-image: url("/img/abstract-red-background-christmas-valentines-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color.jpg");
     background-size: 100%;
     filter: hue-rotate(32deg);
     color: var(--colorlightbeige);
@@ -54,6 +54,7 @@ body {
     font-size: 1.2em;
     font-weight: 600;
     height: 80%;
+    list-style-type: none;
 }
 
 .header__nav__li > a:hover {
@@ -67,6 +68,59 @@ body {
     color: #F7CCAC;
     transition: 0.2s;
 }
+
+/* HAMBURGEMENY */
+
+#hamburger-menu {
+    width: 5em;
+    height: 3em;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 5em;
+    background: linear-gradient(
+      to bottom, 
+      var(--colorlightbeige), var(--colordarkerbeige) 20%, 
+      rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 0) 40%, 
+      var(--colorlightbeige) 40%, var(--colordarkerbeige) 60%, 
+      rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 80%, 
+      var(--colorlightbeige) 40%, var(--colordarkerbeige) 60%
+    );
+}
+  
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 80%;
+    height: fit-content;
+    background-color:#2a2932f1;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    transition: 0.25s;
+    text-align: center;
+}
+
+.burger-shower {
+    display: none;
+}
+
+#sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+
+ .header__hamburger__title {
+    font-size: 3em;
+    padding: 1em 0em;
+ }
 
 h1 {
     font-size: 3em;
@@ -91,4 +145,33 @@ footer {
     position: fixed;
     bottom: 0em;
     width: 100%;
+}
+
+
+@media (max-width: 785px) {
+    .header {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header__nav__items {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: inline;
+    }
+    .header__nav__li > a {
+        border: 1px solid;
+        border-radius: 0.5em;
+        height:80%;
+        background-color: #2a2932;
+    }
+    
+    .header__nav__li {
+        width: 100%;
+        margin: 2em 0em;
+        font-size: 2em;
+        font-weight: 500;
+        list-style-type: none;
+    }
 }
