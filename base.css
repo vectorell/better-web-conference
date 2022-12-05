@@ -72,12 +72,12 @@ body {
 /* HAMBURGEMENY */
 
 #hamburger-menu {
-    width: 5em;
+    width: 4em;
     height: 3em;
     display: none;
     border: none;
     padding: 0px;
-    margin: 5em;
+    margin: 1em 0em 1em 2em;
     background: linear-gradient(
       to bottom, 
       var(--colorlightbeige), var(--colordarkerbeige) 20%, 
@@ -119,7 +119,7 @@ body {
 
  .header__hamburger__title {
     font-size: 3em;
-    padding: 1em 0em;
+    padding: 0.5em 0em;
  }
 
 h1 {
@@ -169,7 +169,7 @@ footer {
     
     .header__nav__li {
         width: 100%;
-        margin: 2em 0em;
+        margin: 1em 0em;
         font-size: 2em;
         font-weight: 500;
         list-style-type: none;
