@@ -25,6 +25,11 @@
     border-radius: 1em 0em 1em;
 }
 
+.container__section:hover {
+    box-shadow: var(--shadow-elevation-high);
+    transform: scale(101%);
+    transition: ease 0.15s;
+}
 
 .container__section__image > img {
     max-width: 100%;
