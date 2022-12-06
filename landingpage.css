@@ -1,11 +1,13 @@
+body {
+    backdrop-filter: blur(0px);
+}
+
 main {
     text-align: center;
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-image: url("/img/business-people-casual-meeting.jpg");
-    background-size: auto 100%;
 }
 
 p {
