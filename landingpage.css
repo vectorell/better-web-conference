@@ -4,9 +4,8 @@ main {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-image: url("/img/female-business-executive-giving-speech.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-image: url("/img/business-people-casual-meeting.jpg");
+    background-size: auto 100%;
 }
 
 p {
@@ -14,11 +13,19 @@ p {
 }
 
 .contentcontainer {
-    /* filter: blur(2em); */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.486);
+    background-size: 100% auto;
+    background-attachment: fixed;
+    box-shadow: var(--shadow-elevation-medium);
+    border-radius: 0.5em;
+    font-size: 1.2em;
     height: 50%;
-    width: 100%;
+    max-width: 70%;
+    padding: 2em;
     align-self: center;
-    /* margin-top: 3em; */
-    border: 1px dashed var(--colorlightbeige);
-    overflow: hidden;
+    /* border: 1px dashed var(--colorlightbeige); */
+    color:rgb(255, 255, 255);
 }
