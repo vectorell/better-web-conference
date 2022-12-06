@@ -22,10 +22,13 @@ p {
     box-shadow: var(--shadow-elevation-medium);
     border-radius: 0.5em;
     font-size: 1.2em;
-    height: 50%;
+    height: auto;
     max-width: 70%;
     padding: 2em;
     align-self: center;
-    /* border: 1px dashed var(--colorlightbeige); */
     color:rgb(255, 255, 255);
+}
+
+.contentcontainer > * {
+    padding: 1em;
 }
