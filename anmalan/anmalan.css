@@ -1,12 +1,12 @@
 /* ↓--↓-- HUVUDCONTAINER --↓--↓ */
 .container {
-    background-image: url("/img/beige-aged-background_53876-88685.webp");
     border-radius: 0.5em;
-    color:var(--colordarkgrey);
+    background-color: rgba(255, 255, 255, 0.592);
+    color:black;
     margin: 2em 0em;
     max-width: 50em;
     min-width: 19em;
-    padding: 3em;
+    padding: 2em 3em 3em 3em;
 }
 
 /* ↓--↓-- FORMULÄRCONTAINER --↓--↓*/
@@ -22,7 +22,7 @@
 
 /* ↓--↓-- RUBRIKERNA OVANFÖR INPUT-FÄLTEN --↓--↓ */
 .container__inputheader {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 600;
     padding: 0.5em 0em 0.2em 0em;
 }
@@ -36,14 +36,17 @@
 
 /* ↓--↓-- CONTAINER FÖR ADRESSGRUPPEN --↓--↓ */
 .container__adressgroup {
-    background-color: rgba(255, 255, 255, 0.561);
+    /* background-image: url("/img/beige-aged-background_53876-88685.webp"); */
+    background-color: rgba(255, 255, 255, 0.646);
+    color: black;
     border-radius: 0.5em;
-    box-shadow: var(--shadow-elevation-medium2);
+    box-shadow: var(--shadow-elevation-medium);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 1em;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .container__ticket {
@@ -63,6 +66,8 @@
 
 /* ↓--↓-- MATCONTAINER --↓--↓ */
 .container__food {
+    background-color: rgba(255, 255, 255, 0.646);
+    color: black;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -72,7 +77,7 @@
     border-radius: 0.5em;
     margin-top: 1em;
     padding: 1em;
-    box-shadow: var(--shadow-elevation-medium2);
+    box-shadow: var(--shadow-elevation-medium);
 }
 
 /* ↓--↓-- MATCONTAINERNS BARN --↓--↓ */
@@ -98,12 +103,12 @@
     align-items: center;
     justify-content: center;
     transition: 0.2s;
-    box-shadow: var(--shadow-elevation-medium2);
+    box-shadow: var(--shadow-elevation-medium);
 }
 .container__food__item > label:hover {
     transition: 0.2s;
     background-color: rgb(87, 255, 199);
-    box-shadow: var(--shadow-elevation-high2);
+    box-shadow: var(--shadow-elevation-high);
     transform: scale(102%);
     cursor: pointer;
 }
@@ -119,14 +124,14 @@
 .container__food__item > label:focus {
     background-color: #58d295;
     transform: scale(99%);
-    box-shadow: var(--shadow-elevation-medium2);
+    box-shadow: var(--shadow-elevation-medium);
 }
 
 /* ↓--↓-- MATALTERNATIV - VALD --↓--↓ */
 .container__food__item > input:checked + label {
     background-color: #58d295;
     transform: scale(99%);
-    box-shadow: var(--shadow-elevation-medium2);
+    box-shadow: var(--shadow-elevation-medium);
 }
 
 .container__allergies {
@@ -139,11 +144,12 @@
 .container__allergies > input:valid {
     border-right: 2px solid;
     width: 100%;
+    background-color: white;
 }
 
 
 .container__button {
-    box-shadow: var(--shadow-elevation-medium2);
+    box-shadow: var(--shadow-elevation-medium);
     border: none;
     margin-top: 1em;
     height: 3em;
@@ -158,7 +164,7 @@
     cursor: pointer;
     transform: scale(101%);
     transition: 0.2s;
-    box-shadow: var(--shadow-elevation-high2);
+    box-shadow: var(--shadow-elevation-high);
 }
 
 /* ↓----↓----↓----VALIDERING----↓----↓----↓---------------------------- */
@@ -176,7 +182,7 @@ input:invalid + .error-message {
 input:focus {
     border-right: 2em solid white;
     border: 5px solid #570e00; 
-    box-shadow: var(--shadow-elevation-high2);
+    box-shadow: var(--shadow-elevation-medium);
 }
 
 input:valid {
@@ -210,6 +216,10 @@ input:valid {
 .error-message {
     visibility: hidden;
     font-size: 1.15em;
+    padding-left:0.5em;
+    padding-top:0.3em;
+    padding-bottom:1em;
+    color: var(--colordarkgrey);
 }
 
 @media (max-width: 500px) {
