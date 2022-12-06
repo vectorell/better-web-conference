@@ -1,14 +1,23 @@
-/* ↓--↓-- HUVUDCONTAINER --↓--↓ */
-.container {
-    border-radius: 0.5em;
-    background-color: rgba(255, 255, 255, 0.592);
-    color:black;
-    margin: 2em 0em;
-    max-width: 50em;
-    min-width: 19em;
-    padding: 2em 3em 3em 3em;
+main {
+    padding: 0;
 }
 
+/* ↓--↓-- HUVUDCONTAINER --↓--↓ */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    max-width: 80em;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.406);
+    border-left: 1.5em double #970c0c84;
+    border-right: 1.5em double #970c0c84;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 5em;
+    padding-top: 2em;
+    color:white;
+}
 /* ↓--↓-- FORMULÄRCONTAINER --↓--↓*/
 .container__forms {
     box-sizing: border-box;
@@ -37,7 +46,7 @@
 /* ↓--↓-- CONTAINER FÖR ADRESSGRUPPEN --↓--↓ */
 .container__adressgroup {
     /* background-image: url("/img/beige-aged-background_53876-88685.webp"); */
-    background-color: rgba(255, 255, 255, 0.646);
+    background-color: rgba(255, 255, 255, 0.561);
     color: black;
     border-radius: 0.5em;
     box-shadow: var(--shadow-elevation-medium);
@@ -66,7 +75,6 @@
 
 /* ↓--↓-- MATCONTAINER --↓--↓ */
 .container__food {
-    background-color: rgba(255, 255, 255, 0.646);
     color: black;
     display: flex;
     justify-content: space-between;
@@ -219,7 +227,7 @@ input:valid {
     padding-left:0.5em;
     padding-top:0.3em;
     padding-bottom:1em;
-    color: var(--colordarkgrey);
+    color: white;
 }
 
 @media (max-width: 500px) {
