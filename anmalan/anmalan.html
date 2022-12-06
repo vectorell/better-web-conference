@@ -16,6 +16,7 @@
 
         <input type="checkbox" id="hamburger-input" class="burger-shower" />
 
+        <!-- HAMURGEMENY________________________ -->
         <label id="hamburger-menu" for="hamburger-input">
             <nav id="sidebar-menu">
                 <h3 class="header__hamburger__title"> Meny </h3>
@@ -28,7 +29,7 @@
             </nav>
         </label>
 
-
+        <!-- DESKTOPMENY________________________ -->
         <nav class="header__nav">
             <ul class="header__nav__items">
                 <li class="header__nav__li"> <a href="/landingpage.html"> Startsida </a> </li>
@@ -39,11 +40,12 @@
         </nav>
     </header>
 
+
 <!-- MAIN_______________MAIN_______________MAIN -->
     <main>
         <h1> Anmälan </h1>
 
-    <!--________NAMNGRUPP_________________________________________________________________-->
+        <!--________NAMNGRUPP____________________________________________________________-->
         <section class="container">
             <form class="container__forms" action="#">
 
@@ -66,7 +68,7 @@
                 <br/>
             
 
-                <!--________ADRESSGRUPP_________________________________________________________________-->
+                <!--________ADRESSGRUPP____________________________________________-->
                 <section class="container__adressgroup">
                     <h2> Dina adressuppgifter </h2>
 
@@ -98,26 +100,26 @@
 
 
 
-                <!--________DATUMGRUPP_________________________________________________________________-->
+                <!--________DATUMGRUPP_______________________________________________-->
                 <h2> Välj din biljett </h2>    
                 
-                <div class="container__date">
-                    <div class="container__ticket">
-                        <div class="container__ticket__all">
-                            <label for="alldays"> Från och med </label>
-                            <br/>
-                            <input class="container__input-text" type="date"  name="ticket" id="alldays" required min="2022-12-09" max="2022-12-11">
-                        </div>
-                        <div class="container__ticket__singleday">
-                            <label for="singleday"> Till och med </label>
-                            <br/>
-                            <input class="container__input-text" type="date" name="ticket" id="singleday" required min="2022-12-09" max="2022-12-11">
-                        </div>
-                    </div>
-                </div>
+                <div class="container__ticket">
 
+                    <!-- DATUMVÄLJARE (FRÅN OCH MED) -->
+                    <div class="container__ticket__datefrom">
+                        <label for="datefrom"> Från och med (tidigast 9 dec)</label> <br/>
+                        <input class="container__input-text" type="date"  name="ticket" id="datefrom" required min="2022-12-09" max="2022-12-11">
+                    </div>
+
+                    <!-- DATUMVÄLJARE (TILL OCH MED) -->
+                    <div class="container__ticket__dateto">
+                        <label for="dateto"> Till och med (senast 11 dec)</label> <br/>
+                        <input class="container__input-text" type="date" name="ticket" id="dateto" required min="2022-12-09" max="2022-12-11">
+                    </div>
+
+                </div>
                 
-                <!--________MATGRUPP_________________________________________________________________-->
+                <!--________MATGRUPP_________________________________________________-->
                 <div class="container__food">
                     <h2> Välj din mat </h2> 
                     
@@ -147,15 +149,11 @@
                             <label for="allergies"><h3> Vänligen fyll i eventuella allergier (max 100 tecken)</h3></label>
                             <input class="container__input-text" type="text" name="allergies" id="allergies" placeholder="Fyll i dina allergier här" maxlength="100"></input>
                         </div>
-                
                 </div>
 
                 <button class="container__button">Skicka anmälan</button>
-
             </form>
         </section>
-
-
     </main>
 
     <footer>
