@@ -149,6 +149,10 @@ main {
     text-align: left;
 }
 
+.container__allergies > .container__input-text {
+    color: #000000;
+}
+
 /*  */
 .container__allergies > input:valid {
     border-right: 2px solid;
