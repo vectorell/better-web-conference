@@ -18,6 +18,7 @@ main {
     padding-top: 5em;
     color:white;
     backdrop-filter: blur(30px);
+    box-shadow: var(--shadow-elevation-bmedium);
 }
 /* ↓--↓-- FORMULÄRCONTAINER --↓--↓*/
 .container__forms {

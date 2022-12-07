@@ -16,6 +16,7 @@ main {
     padding-right: 5em;
     padding-bottom: 5em;
     padding-top: 5em;
+    box-shadow: var(--shadow-elevation-bmedium);
 }
 
 .container__section {
