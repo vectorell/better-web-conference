@@ -1,15 +1,17 @@
 main {
     padding: 0em;
-    backdrop-filter: blur(30px);
+    display: flex;
 }
 
 .container {
+    backdrop-filter: blur(30px);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 70vw;
     max-width: 80em;
     height: 100vh;
-    /* background-color: rgba(0, 0, 0, 0.406); */
+    background-color: rgba(0, 0, 0, 0.406);
     /* border-left: 1.5em double #970c0c84;
     border-right: 1.5em double #970c0c84; */
     padding-left: 2em;
@@ -20,7 +22,7 @@ main {
 
 .container__section {
     color: #000000;
-    border: 1px solid #970c0c84;
+    /* border: 1px solid #970c0c84; */
     border-radius: 1em;
     display: flex;
     justify-content:space-between;

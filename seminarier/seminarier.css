@@ -1,26 +1,26 @@
 main {
     padding: 0;
-    backdrop-filter: blur(30px);
 }
 
 .container {
     display: flex;
     flex-direction: column;
     width: 70vw;
+    backdrop-filter: blur(30px);
     max-width: 80em;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.406); */
-    border-left: 1.5em double #970c0c34;
-    border-right: 1.5em double #970c0c34;
-    padding-left: 2em;
-    padding-right: 2em;
+    background-color: rgba(0, 0, 0, 0.406);
+    /* border-left: 1.5em double #970c0c34;
+    border-right: 1.5em double #970c0c34; */
+    padding-left: 5em;
+    padding-right: 5em;
     padding-bottom: 5em;
     padding-top: 5em;
 }
 
 .container__section {
     color: #000000;
-    border: 1px solid #970c0c84;
+    /* border: 1px solid #970c0c84; */
     border-radius: 1em;
     display: flex;
     justify-content:space-between;
