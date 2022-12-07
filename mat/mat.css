@@ -97,7 +97,6 @@ main {
     }
     .container__section {
         flex-direction: column;
-        /* padding-left: 0em; */
         max-height: unset;
         align-items: center;
         margin-bottom: 1em;
