@@ -1,5 +1,6 @@
 main {
     padding: 0;
+    backdrop-filter: blur(30px);
 }
 
 .container {
@@ -8,9 +9,9 @@ main {
     width: 70vw;
     max-width: 80em;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.406);
-    border-left: 1.5em double #970c0c84;
-    border-right: 1.5em double #970c0c84;
+    /* background-color: rgba(0, 0, 0, 0.406); */
+    border-left: 1.5em double #970c0c34;
+    border-right: 1.5em double #970c0c34;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 5em;
