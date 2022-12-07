@@ -1,5 +1,5 @@
 main {
-    padding: 0;
+    padding: 0em;
 }
 
 .container {
@@ -14,7 +14,7 @@ main {
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 5em;
-    padding-top: 2em;
+    padding-top: 5em;
 }
 
 .container__section {
@@ -89,6 +89,7 @@ main {
         border-radius: 0.5em;
         background-color: unset;
         padding: 0em 0.5em 2em 0.5em;
+        min-height: 100vh;
     }
     .container__section {
         flex-direction: column;
