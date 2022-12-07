@@ -46,6 +46,11 @@ main {
     width: 100%;
     min-height: 100%;
 }
+.container__section__image {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
 
 .container__section__picture {
     max-width: 50%;

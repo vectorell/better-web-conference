@@ -10,15 +10,16 @@
 
 body {
     background-color: var(--colordarkgrey);
+    background-image: url("/img/business-people-4k-casual-meeting.jpg");
+    background-size: auto 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
     color: #ffffff;
     height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
-    background-image: url("/img/business-people-casual-meeting.jpg");
-    background-size: auto 100%;
-    background-attachment: fixed;
-
 }
 
 .header {
@@ -150,7 +151,6 @@ footer {
     width: 100%;
 }
 
-
 @media (max-width: 785px) {
     .header {
         display: flex;
@@ -176,5 +176,21 @@ footer {
         font-size: 2em;
         font-weight: 500;
         list-style-type: none;
+    }
+}
+
+@media (max-width: 2560px) {
+    body {
+        background-image: url("/img/business-people-QHD-casual-meeting.jpg");
+    }
+}
+@media (max-width: 1920px) {
+    body {
+        background-image: url("/img/business-people-1080-casual-meeting.jpg");
+    }
+}
+@media (max-width: 1280px) {
+    body {
+        background-image: url("/img/business-people-720p-casual-meeting.jpg");
     }
 }
