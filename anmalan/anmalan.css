@@ -62,15 +62,17 @@ main {
     display: flex;
     flex-direction: row;
     margin-bottom: 1em;
+    flex-wrap: wrap;
 }
- .container__ticket > div > .container__input-text:focus {
+.container__ticket > div > .container__input-text:focus {
     border-right: 2em solid white;
- }
+}
 
 .container__ticket > div {
     padding-top: 0.5em;
     box-sizing: border-box;
-    width: 50%;
+    max-width: 100%;
+    margin-right:2em;
 }
 
 /* ↓--↓-- MATCONTAINER --↓--↓ */
@@ -251,7 +253,7 @@ input:valid {
         padding-left: 0.2em;
         width: 100%;
     }
-
+    
     .container__food {
         display: flex;
         flex-direction: column;
