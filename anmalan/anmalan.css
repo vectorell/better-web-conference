@@ -6,8 +6,7 @@ main {
 .container {
     display: flex;
     flex-direction: column;
-    width: 70vw;
-    max-width: 80em;
+    max-width: 50em;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.406);
     border-left: 1.5em double #970c0c84;
@@ -96,7 +95,7 @@ main {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 5em;
+    flex-basis: 6em;
     height: 3em;
     font-size: 1.2em;
     font-weight: 600;
