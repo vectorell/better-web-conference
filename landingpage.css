@@ -34,3 +34,18 @@ p {
 .contentcontainer > * {
     padding: 1em;
 }
+
+@media (max-width: 785px) {
+    main {
+        display: block;
+        padding-top: 8em;
+    }
+    
+    .contentcontainer {
+        font-size: unset;
+        max-width: unset;
+        padding: unset;
+        margin: 0em 0.5em;
+        height: 30%;
+    }
+}
