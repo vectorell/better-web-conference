@@ -31,17 +31,20 @@ main {
     background-color: var(--colorlightbeige);
     background: url("/img/beige-aged-background_53876-88685.webp");   
     background-size: 100%;
-    background-attachment: fixed;
     margin-top: 3em;
     box-shadow: var(--shadow-elevation-medium);
     text-align: center;
-    transition: ease 0.05s;
+    transition: ease 0.15s;
 }
 
 .container__section:hover {
     box-shadow: var(--shadow-elevation-high);
     transform: scale(101%);
     transition: ease 0.15s;
+}
+
+.container__section:focus {
+    border: 4px double;
 }
 
 .container__section__image > img {
