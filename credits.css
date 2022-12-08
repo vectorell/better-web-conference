@@ -34,8 +34,18 @@ p {
     color:rgb(255, 255, 255);
 }
 
+h3 {
+    padding-bottom: 0.2em;
+}
+
 .contentcontainer > * {
     padding: 1em;
+}
+
+.contentcontainer__ul > li {
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    margin-left: 1em;
 }
 
 .contentcontainer__a {
@@ -59,9 +69,5 @@ p {
         max-width: unset;
         padding: unset;
         margin: 0em 0.5em;
-    }
-
-    .contentcontainer__ul > a {
-        margin-top: 2em;
     }
 }
