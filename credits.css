@@ -11,7 +11,7 @@ p {
 }
 
 
-.contentcontainer__ul {
+.contentcontainer__ul_ul {
     margin-left: 1em;
     margin-bottom: 1em;
 }
@@ -35,15 +35,11 @@ p {
     backdrop-filter: blur(10px);
 }
 
-h3 {
-    padding-bottom: 0.2em;
+.contentcontainer__heading {
+    padding-bottom: 0.5em;
 }
 
-.contentcontainer > * {
-    padding: 1em;
-}
-
-.contentcontainer__ul > li {
+.contentcontainer__ul__ul > li {
     margin-bottom: 1em;
     font-size: 0.9em;
     margin-left: 1em;
@@ -59,10 +55,16 @@ h3 {
     color: #4cc1c5;
 }
 
+.credits {
+    text-align: center;
+    padding-top:1em;
+}
+
 @media (max-width: 785px) {
     main {
         display: block;
         padding-top: 8em;
+        padding-bottom: 6em;
     }
     
     .contentcontainer {
