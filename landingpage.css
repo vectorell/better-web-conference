@@ -40,6 +40,14 @@ p {
     color: #46f9ff;
 }
 
+.credit:hover, .credit:focus {
+    background-color: var(--colordarkgrey);
+    color: var(--colorlightbeige);
+    transition: 0.2s;
+    border-radius: 0.5em;
+    padding: 0em 1em;
+}
+
 @media (max-width: 785px) {
     main {
         display: block;
