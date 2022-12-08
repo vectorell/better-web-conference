@@ -1,5 +1,6 @@
 main {
     padding: 0;
+    height: fit-content;
 }
 
 /* ↓--↓-- HUVUDCONTAINER --↓--↓ */
@@ -8,10 +9,8 @@ main {
     flex-direction: column;
     justify-content: center;
     max-width: 50em;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.406);
-    /* border-left: 1.5em double #970c0c84;
-    border-right: 1.5em double #970c0c84; */
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 5em;
@@ -168,6 +167,7 @@ main {
     box-shadow: var(--shadow-elevation-medium);
     border: none;
     margin-top: 1em;
+    margin-bottom: 5em;
     height: 3em;
     border-radius: 0.5em;
     font-size: 1.3em;
@@ -239,7 +239,7 @@ input:valid {
     color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     main {
         margin:0;
     }
