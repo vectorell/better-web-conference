@@ -7,7 +7,7 @@ main {
     backdrop-filter: blur(10px);
     width: 70vw;
     max-width: 80em;
-    height: 100vh;
+    height: fit-content;
     background-color: rgba(0, 0, 0, 0.406);
     padding: 5em 2em;
     box-shadow: var(--shadow-elevation-bmedium);
