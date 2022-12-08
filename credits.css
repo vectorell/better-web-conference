@@ -32,6 +32,7 @@ p {
     margin-bottom: 5em;
     align-self: center;
     color:rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
 }
 
 h3 {
