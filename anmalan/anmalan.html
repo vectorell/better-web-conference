@@ -11,12 +11,11 @@
 </head>
 <body>
 
-<!-- HEADER_______________HEADER_______________HEADER -->
+    <!-- -----HEADER---------------------------- -->
     <header class="header">
 
+        <!-- HAMURGEMENY -->
         <input type="checkbox" id="hamburger-input" class="burger-shower" />
-
-        <!-- HAMURGEMENY________________________ -->
         <label id="hamburger-menu" for="hamburger-input">
             <nav id="sidebar-menu">
                 <h3 class="header__hamburger__title"> Meny </h3>
@@ -29,7 +28,7 @@
             </nav>
         </label>
 
-        <!-- DESKTOPMENY________________________ -->
+        <!-- DESKTOPMENY -->
         <nav class="header__nav">
             <ul class="header__nav__items">
                 <li class="header__nav__li"> <a href="/landingpage.html"> Startsida </a> </li>
@@ -39,13 +38,14 @@
             </ul>
         </nav>
     </header>
+    <!-- --------------------------------------- -->
 
 
-<!-- MAIN_______________MAIN_______________MAIN -->
+    <!-- -----MAIN------------------------------ -->
     <main>
         
-        <!--________NAMNGRUPP____________________________________________________________-->
-        <section class="container">
+        <!--NAMNGRUPP-->
+        <article class="container">
             <h1> Anmälan </h1>
             <form class="container__forms" action="#">
 
@@ -68,7 +68,7 @@
                 <br/>
             
 
-                <!--________ADRESSGRUPP____________________________________________-->
+                <!--ADRESSGRUPP-->
                 <section class="container__adressgroup">
                     <!-- <h2> Dina adressuppgifter </h2> -->
 
@@ -94,10 +94,10 @@
 
 
 
-                <!--________DATUMGRUPP_______________________________________________-->
+                <!--DATUMGRUPP-->
                 <h2> Välj din biljett </h2>    
                 
-                <div class="container__ticket">
+                <section class="container__ticket">
 
                     <!-- DATUMVÄLJARE (FRÅN OCH MED) -->
                     <div class="container__ticket__datefrom">
@@ -111,28 +111,28 @@
                         <input class="container__input-text" type="date" name="ticket" id="dateto" required min="2022-12-09" max="2022-12-11">
                     </div>
 
-                </div>
+                </section>
                 
-                <!--________MATGRUPP_________________________________________________-->
-                <div class="container__food">
+                <!--MATGRUPP-->
+                <section class="container__food">
                     <h2> Välj din mat </h2> 
                     
                     <!-- DOLT MEDDELANDE SOM DYKER UPP VID TANGENTBORDSANVÄNDNING -->
                     <p class="focus-message" tabindex="0"> Vid <strong>nästa markering</strong>, använd piltangenterna för att välja maträtt. </p>
 
-                <!-- ALT.1 - GRILLAT -->
+                    <!-- ALT.1 - GRILLAT -->
                     <div class="container__food__item container__food__meat" >
                         <input type="radio" name="food" id="meat"  required  >
                         <label  for="meat" > Grillat </label>
                     </div>
     
-                <!-- ALT.2 - FISK -->
+                    <!-- ALT.2 - FISK -->
                     <div class="container__food__item container__food__fish" >
                         <input type="radio" name="food" id="fish">
                         <label for="fish"> Fisk </label>
                     </div>
 
-                <!-- ALT.3 - VEGETARISKT -->
+                    <!-- ALT.3 - VEGETARISKT -->
                     <div class="container__food__item container__food__vegetarian" >
                         <input type="radio" name="food" id="vegetarian">
                         <label for="vegetarian" > Vegetariskt </label>
@@ -140,31 +140,36 @@
 
                     <!-- ALLERGIER -->
                     <!-- Valde bort textfield av säkerhetsskäl då det hade begränsade valideringsmöjligheter -->
-                        <div class="container__allergies">
-                            <label for="allergies"><h3> Vänligen fyll i eventuella allergier (max 100 tecken)</h3></label>
-                            <input class="container__input-text" type="text" name="allergies" id="allergies" placeholder="Fyll i dina allergier här" maxlength="100"></input>
-                        </div>
-                </div>
+                    <div class="container__allergies">
+                        <label for="allergies"><h3> Vänligen fyll i eventuella allergier (max 100 tecken)</h3></label>
+                        <input class="container__input-text" type="text" name="allergies" id="allergies" placeholder="Fyll i dina allergier här" maxlength="100"></input>
+                    </div>
+                </section>
 
                 <button class="container__button">Skicka anmälan</button>
             </form>
         </section>
     </main>
+    <!-- --------------------------------------- -->
 
+
+    <!-- -----FOOTER---------------------------- -->
     <footer>
         <div class="footer-container">
 
             <!-- ADRESS-SECTION -->
             <section class="footer-container__adress">
-                <span> Adress: Betavägen 1.2, Utvecklingshamn  </span>
+                <p> Adress: Betavägen 1.2, Utvecklingshamn  </p>
             </section>
             
             <!-- ABOUT-TEXT -->
             <section class="footer-container__quickabout">
-                <span> Öppettider 8-18 </span>    
+                <p> Öppettider 8-18 </p>
             </section>
+
         </div>
     </footer>
+    <!-- -------------------------------------- -->
 
 </body>
 </html>
