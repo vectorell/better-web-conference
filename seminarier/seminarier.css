@@ -59,6 +59,7 @@ main {
 
 .container__section__picture {
     max-width: 50%;
+    object-fit: fill;
     display: flex;
     align-items: center;
 }

@@ -22,3 +22,9 @@ vegetarisk bild
 
 bild UX UI
 <a href="https://www.freepik.com/free-photo/product-design-drawing-website-graphic_12189388.htm#query=ux%20ui&position=14&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
+
+errormessage
+Image by <a href="https://www.freepik.com/free-vector/modern-warning-pop-up-with-flat-design_2648716.htm#query=error&position=0&from_view=search&track=sph">Freepik</a>
+
+BILD: HTML-validering
+<a href="https://www.freepik.com/free-vector/magnifying-glass-background-design_1002317.htm#query=magnifying%20glass%20code&position=0&from_view=search&track=sph">Image by alvaro_cabrera</a> on Freepik
