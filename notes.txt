@@ -1,7 +1,3 @@
-funktionsvariationsbild
-<a href="https://www.freepik.com/free-vector/vector-symbols-disabled-toilets-baby-mother-room_10603629.htm#query=handicap&position=1&from_view=search&track=sph">Image by macrovector</a> on Freepik
-
-
 beige bild
 <a href="https://www.freepik.com/free-photo/beige-aged-background_4100990.htm#query=beige%20aged%20background&position=0&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
 
@@ -28,3 +24,35 @@ Image by <a href="https://www.freepik.com/free-vector/modern-warning-pop-up-with
 
 BILD: HTML-validering
 <a href="https://www.freepik.com/free-vector/magnifying-glass-background-design_1002317.htm#query=magnifying%20glass%20code&position=0&from_view=search&track=sph">Image by alvaro_cabrera</a> on Freepik
+
+
+_________________________PAGE SEMINARIER
+BILD Semantisk HTML
+<a href="https://www.freepik.com/free-photo/female-business-executive-giving-speech_8236772.htm#query=audience%20speech&position=8&from_view=search&track=sph">Image by wavebreakmedia_micro</a> on Freepik
+
+BILD Designlayout genom CSS
+<a href="https://www.freepik.com/free-photo/male-business-executive-giving-speech_8236858.htm">Image by wavebreakmedia_micro</a> on Freepik
+
+BILD JavaScript
+<a href="https://www.freepik.com/free-photo/female-business-executive-giving-speech_8236784.htm#page=4&query=business%20seminar&position=38&from_view=keyword">Image by wavebreakmedia_micro</a> on Freepik
+
+BILD Typsnitt
+<a href="https://www.freepik.com/free-photo/man-have-question-hand-raised-up-group-people-business-conference-modern-classroom-daytime_9694501.htm">Image by standret</a> on Freepik
+
+BILD BEM
+<a href="https://www.freepik.com/free-photo/corporate-businessman-giving-presentation-large-audience_15440962.htm">Image by rawpixel.com</a> on Freepik
+
+BILD Tillgänglighet
+<a href="https://www.freepik.com/free-vector/vector-symbols-disabled-toilets-baby-mother-room_10603629.htm#query=handicap&position=1&from_view=search&track=sph">Image by macrovector</a> on Freepik
+
+BILD ARIA
+My own
+
+BILD UX UI
+<a href="https://www.freepik.com/free-photo/product-design-drawing-website-graphic_12189388.htm#query=ux%20ui&position=22&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
+
+BILD Formulärvalidering
+Image by <a href="https://www.freepik.com/free-vector/modern-warning-pop-up-with-flat-design_2648716.htm#query=error&position=0&from_view=search&track=sph">Freepik</a>
+
+BILD HTML-validering
+<a href="https://www.freepik.com/free-vector/magnifying-glass-background-design_1002317.htm">Image by alvaro_cabrera</a> on Freepik
